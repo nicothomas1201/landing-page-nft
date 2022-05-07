@@ -1,0 +1,17 @@
+.button{
+  padding: .875rem 2rem;
+  font: var(--body-16bold);
+  border: 1px solid transparent;
+  border-radius: .75rem;
+}
+
+.button.is-primary{
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.button.is-secondary{
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}

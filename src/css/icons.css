@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon.eot?tx103o');
+  src:  url('../font/icomoon.eot?tx103o#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?tx103o') format('truetype'),
+    url('../font/icomoon.woff?tx103o') format('woff'),
+    url('../font/icomoon.svg?tx103o#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change ../font */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevronDown:before {
+  content: "\e900";
+}
+.icon-chevronRight:before {
+  content: "\e901";
+}
+.icon-chevronUp:before {
+  content: "\e902";
+}
+.icon-clock:before {
+  content: "\e903";
+}
+.icon-eye:before {
+  content: "\e904";
+}
+.icon-filter:before {
+  content: "\e905";
+}
+.icon-grid:before {
+  content: "\e906";
+}
+.icon-heart:before {
+  content: "\e907";
+  color: #717171;
+}
+.icon-minus:before {
+  content: "\e908";
+}
+.icon-plus:before {
+  content: "\e909";
+}
+.icon-share:before {
+  content: "\e90a";
+}
+.icon-star:before {
+  content: "\e90b";
+}
+.icon-x:before {
+  content: "\e90c";
+}
