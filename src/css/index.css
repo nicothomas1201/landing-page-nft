@@ -24,6 +24,7 @@
 body {
   font: var(--body-16bold);
   background-color: var(--white);
+  margin: 0;
   
 }
 
