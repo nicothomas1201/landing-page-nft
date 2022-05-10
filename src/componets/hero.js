@@ -1,30 +1,11 @@
 import { Buttons } from "./buttons"
+import heroImage from '../images/hero-image.png'
+import heroAvatar from '../images/hero-avatar.png' 
 import '../css/hero.css'
-import { searchNftAssets } from "../utils/search-nft"
-import { useEffect, useState } from 'react'
 
 
 
 export function Hero(){
-  const [image, setImage] = useState({})
-
-  useEffect( () => {
-    searchNftAssets({string: 'tinydancercollection'}).then(assets => {
-      let id = 274634595
-      let image = assets.filter(image => image.id === id)
-      console.log(image)
-      let { url, avatar, title, name } = {
-        url: image[0].image_url,
-        avatar: image[0].creator.profile_img_url,
-        title: image[0].name,
-        name: image[0].creator.user.username,
-      }
-      setImage({url, avatar, title, name})
-    })
-  }, [])
-
-  // console.log(image)
-
   return(
     <section className="hero">
       <div className="hero-content">
@@ -39,15 +20,15 @@ export function Hero(){
 
       <div className="hero-image">
         <div className="image-container">
-          <img src={image.url} width='500' heigth='437' alt='' />
+          <img src={heroImage} width='588' heigth='437' alt='' />
         </div>
         <div className="image-info">
           <div className="avatar">
-            <img src={image.avatar} width='50' height="50" alt="" />
+            <img src={heroAvatar} width='50' height="50" alt="" />
           </div>
           <div className="image-description">
-            <h3>{image.title}</h3>
-            <h4>{image.name}</h4>
+            <h3>Tiny Dancer #2</h3>
+            <h4>Aidan Tooth</h4>
           </div>
         </div>
       </div>

@@ -1,10 +1,11 @@
 .hero{
+  block-size: 100vh;
   display: flex;
-  padding: 5rem 5.1875rem;
+  padding-inline: 5.1875rem;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 100.28%), url(https://lh3.googleusercontent.com/gvCm3SQQXIeWhSKyzuPactoFIwiHtdfXhQUA35OpbX4f_HmXrN7F1L0hrtGKNjLxAXnOrjFozMN1_pEen3oc4DmX1b5RcqHwckU66g8);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 100.28%), url(../images/hero-image.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
@@ -60,7 +61,7 @@
   inline-size: 100%;
   vertical-align: middle;
   object-fit: contain;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
 }
 
 .image-info{

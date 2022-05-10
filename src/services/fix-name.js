@@ -11,11 +11,10 @@ export function fixName(string){
   })
 
   if(space !== false){
+    console.log('hola')
     indexFind.forEach( item => {
       message = newString.fill('%20', item, item + 1)
     })
-
-
     return message.join('')
   } else if(space === false){
     return newString.join('')
